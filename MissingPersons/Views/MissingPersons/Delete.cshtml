@@ -1,0 +1,102 @@
+﻿@model MissingPersons.Models.MissingPerson
+
+@{
+    ViewBag.Title = "Usuwanie";
+}
+
+<h2>Usuwanie</h2>
+
+<h3>Czy na pewno chcesz usunąć ten element?</h3>
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecondName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecondName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Surname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Surname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EyeColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EyeColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Height)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Height)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DistinguishingMarks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DistinguishingMarks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastSeenDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastSeenDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastSeenPlace)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastSeenPlace)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Picture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Picture)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Usuń" class="btn btn-default" /> |
+            @Html.ActionLink("Powrót", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MissingPersonModelStoreContainer" CdmEntityContainer="MissingPersonEntities">
+    <EntitySetMapping Name="MissingPerson">
+      <EntityTypeMapping TypeName="MissingPersonModel.MissingPerson">
+        <MappingFragment StoreEntitySet="MissingPerson">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SecondName" ColumnName="SecondName" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="EyeColor" ColumnName="EyeColor" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="DistinguishingMarks" ColumnName="DistinguishingMarks" />
+          <ScalarProperty Name="LastSeenDate" ColumnName="LastSeenDate" />
+          <ScalarProperty Name="LastSeenPlace" ColumnName="LastSeenPlace" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
